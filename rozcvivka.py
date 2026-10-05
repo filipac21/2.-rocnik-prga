@@ -1,0 +1,6 @@
+print("O")
+print("O")
+print("O")
+print("O")
+print("X")
+print("O")
