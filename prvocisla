@@ -1,0 +1,24 @@
+def je_prvocislo(cislo):
+    if cislo < 2:
+        return False
+    if cislo == 2:
+        return True
+    if cislo % 2 == 0:
+        return False
+
+    delitel = 3
+    while delitel * delitel <= cislo:
+        if cislo % delitel == 0:
+            return False
+        delitel += 2
+    return True
+
+prvocisla = []
+cislo = 2
+
+while len(prvocisla) < 100:
+    if je_prvocislo(cislo):
+        prvocisla.append(cislo)
+    cislo += 1
+
+print(prvocisla)

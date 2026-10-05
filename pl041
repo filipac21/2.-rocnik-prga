@@ -2,6 +2,6 @@ cislo = input("Napiš nějaké číslo: ")
 print("Dvakrát tolik je:", cislo + cislo)
 print("Typ toho, co jsi napsal:", type(cislo))
 
-cislo = int(cislo)
+cislo = float(cislo)
 print("A teď dvakrát tolik:", cislo + cislo)
 print("Typ po převodu:", type(cislo))
