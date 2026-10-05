@@ -2,12 +2,18 @@ nazev = input("Co kupuješ? ")
 cena = float(input("Cena za kus (Kč): "))
 pocet = int(input("Kolik kusů? "))
 
+sazba = 0.21
+
 bez_dph = cena * pocet
-dph = bez_dph * 0.21
-s_dph = bez_dph + dph
+sleva = bez_dph * 0.21
+cena_po_sleve = bez_dph - sleva
+dph = cena_po_sleve * sazba
+s_dph = cena_po_sleve + dph
 
 print()
 print("Položka:", nazev, "×", pocet)
 print("Cena bez DPH:", bez_dph, "Kč")
-print("DPH 21 %:", dph, "Kč")
+print("Sleva 10 %:", sleva, "Kč")
+print("Cena po slevě:", cena_po_sleve, "Kč")
+print("DPH", int(sazba * 100), "%:", dph, "Kč")
 print("Celkem k úhradě:", s_dph, "Kč")
