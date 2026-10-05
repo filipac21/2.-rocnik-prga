@@ -1,0 +1,3 @@
+jmeno = input("Jak se jmenuješ ?")
+print("Ahoj, " + jmeno + "!")
+print("Tvoje jméno má", len(jmeno), "písmen.")

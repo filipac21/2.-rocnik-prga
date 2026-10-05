@@ -1,0 +1,7 @@
+cislo = input("Napiš nějaké číslo: ")
+print("Dvakrát tolik je:", cislo + cislo)
+print("Typ toho, co jsi napsal:", type(cislo))
+
+cislo = int(cislo)
+print("A teď dvakrát tolik:", cislo + cislo)
+print("Typ po převodu:", type(cislo))
