@@ -1,0 +1,8 @@
+teploty = [12, 15, 9, 8, 14, 6, 11, 13]
+pod_deset = 0
+
+for t in teploty:
+  if t < 10:
+    pod_deset = pod_deset + 1
+
+print("Počet dnů pod 10 °C:", pod_deset)
