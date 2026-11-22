@@ -16,7 +16,7 @@
 import socket
 import time
 
-servery = ["www.seznam.cz", "www.vut.cz", "www.google.com", "www.nic.br", "www.gov.au"]
+servery = ["www.seznam.cz", "www.vut.cz", "www.google.com", "www.nic.br", "moodle.ssemi.cz", "filipac21.github.io"]
 
 for server in servery:
     zacatek = time.perf_counter()
