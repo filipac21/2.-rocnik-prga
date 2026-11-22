@@ -8,14 +8,15 @@
 # s range místo seznamu a s desetinnými y.
 #
 # >>> KÓD — tohle opisuješ
-a = float(input("a (sklon, zkus 2, 0, -1): "))
-b = float(input("b (posun, zkus 1, 10): "))
+a = float(input("a (sklon): "))
+b = float(input("b (posun): "))
+krok = int(input("Krok (celé číslo): "))
 
 print(f"y = {a} * x + {b}")
 print("    x        y")
-for x in range(-5, 6):         # -5, -4, …, 5 (šestka se nebere)
+for x in range(-5, 6, krok):
     y = a * x + b
-    print(f"{x:5}  {y:7.1f}")  # y na jedno desetinné místo
+    print(f"{x:5}  {y:7.1f}")
 # <<< KÓD
 #
 # VYSVĚTLENÍ KAŽDÉHO ŘÁDKU — pro toho, kdo programuje poprvé
