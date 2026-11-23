@@ -1,0 +1,12 @@
+PRGA-10 · Dril: while a seznamy · 22 krátkých programů
+
+U každého programu:
+  1. otevři ho a přečti blok mezi >>> KÓD a <<< KÓD,
+  2. napiš si do listu PŘEDPOVĚĎ, co vypíše (bez spouštění!),
+  3. spusť: python d01_while_pocitadlo.py (v terminálu ve složce),
+  4. porovnej a přečti PROČ,
+  5. udělej úpravu ze ZKUS.
+
+Pořadí: A while d01–d07, B seznamy d08–d14, C kombinace d15–d18,
+D najdi chybu d19–d20, bonus d21–d22.
+Program, který se nezastaví, ukončíš Ctrl+C.
