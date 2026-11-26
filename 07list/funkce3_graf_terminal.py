@@ -12,7 +12,7 @@ import math
 
 print("x * x jako sloupce:")
 for x in range(-5, 6):
-    y = x * x                       # zkus: 2 * x + 1, abs(x), max(0, x)
+    y = x*x
     print(f"{x:3} | {y:3} " + "#" * y)
 
 print()
@@ -21,6 +21,11 @@ for i in range(0, 32):
     x = i * 0.25                    # 0; 0,25; 0,5; … 7,75
     pozice = int(10 + 10 * math.sin(x))   # -1..1  →  0..20
     print(" " * pozice + "*")
+print("sigmoid jako sloupce:")
+for i in range(-10, 11):
+    x = i * 0.5  # jemnější krok pro x
+    y = round(40 / (1 + math.exp(-x)))  # výsledek 0..1 vynásobíme 40 a zaokrouhlíme
+    print(f"{x:5.1f} | " + "#" * y)   
 # <<< KÓD
 #
 # VYSVĚTLENÍ KAŽDÉHO ŘÁDKU — pro toho, kdo programuje poprvé
